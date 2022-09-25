@@ -1,0 +1,8 @@
+body{
+    font-family: "Arial";
+    background-color: black;
+    color: white;
+}
+.rounded-corners-all-around{
+    border-radius: 50px;
+}
