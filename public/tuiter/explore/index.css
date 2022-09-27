@@ -1,4 +1,6 @@
 body{
+    outline-offset:16px;
+    border: rgb(47, 51, 54);
     font-family: "Arial";
     background-color: black;
     color: white;
