@@ -8,7 +8,7 @@ body{
 
 /*Set the mid-width for the whole screen*/
 .wd-explore-screen {
-    /*min-width: 400px;*/
+    min-width: 400px;
     margin-left: 16px;
 }
 
@@ -24,7 +24,10 @@ body{
 /*Small icon next to the search tab*/
 .wd-settings {
     float: right;
-    padding-right: 5px;
+    /*position: relative;*/
+    /*right: 290px;*/
+    color: yellow;
+    padding-right: 80px;
 }
 
 
@@ -42,16 +45,21 @@ body{
 /*    padding: 5px;*/
 /*}*/
 
-/*.wd-nav-tabs .li-selected div {*/
-/*    border-bottom: solid 4px rgb(29,161,242);*/
-/*}*/
+.wd-list-group {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+}
 
-/*.wd-nav-tabs li div {*/
-/*    padding: 5px;*/
-/*}*/
+.wd-list-group .item {
+    padding: 5px;
+    display: inline-grid;
+}
 
+.wd-list-group .selected {
+    padding: 5px;
+    display: inline-grid;
+    border-bottom: solid 4px rgb(29,161,242);
+}
 
-/*.rounded-corners-all-around{*/
-/*    border-radius: 50px;*/
-/*}*/
 
