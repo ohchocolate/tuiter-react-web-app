@@ -8,7 +8,7 @@ body{
 
 /*Set the mid-width for the whole screen*/
 .wd-explore-screen {
-    min-width: 400px;
+    /*min-width: 400px;*/
     margin-left: 16px;
 }
 
@@ -24,7 +24,9 @@ body{
 /*Small icon next to the search tab*/
 .wd-settings {
     float: right;
+    padding-right: 5px;
 }
+
 
 /*Search tuiter tab*/
 /*.wd-nav-tabs {*/
