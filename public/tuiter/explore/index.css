@@ -16,9 +16,11 @@ body{
 .wd-search {
     width: 70%;
     float: left;
-    border-radius: 5px;
+    border-radius: 50px;
     color: rgb(29,162,242);
     padding: 5px;
+    margin-right: 12px;
+    background-color: darkgray;
 }
 
 /*Small icon next to the search tab*/
@@ -46,20 +48,36 @@ body{
 /*}*/
 
 .wd-list-group {
+    font-size: 15px;
     list-style-type: none;
     display: inline-block;
-    padding: 5px;
+    padding: 0px;
 }
 
 .wd-list-group .item {
-    padding: 5px;
+    padding: 16px;
     display: inline-grid;
 }
 
 .wd-list-group .selected {
-    padding: 5px;
+    padding: 16px;
     display: inline-grid;
     border-bottom: solid 4px rgb(29,161,242);
 }
 
+.wd-topic {
+    padding: 5px;
+    font-size: 13px;
+    color: rgb(110,118,125);
+}
 
+.wd-number-of-t {
+    padding: 5px;
+    font-size: 13px;
+    color: rgb(110,118,125);
+}
+
+.wd-title {
+    padding: 5px;
+    color: white;
+}
