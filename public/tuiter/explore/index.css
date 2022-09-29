@@ -1,10 +1,55 @@
+/*Naming conventions: all classes start with wd*/
+
 body{
-    outline-offset:16px;
-    border: rgb(47, 51, 54);
     font-family: "Arial";
     background-color: black;
     color: white;
 }
-.rounded-corners-all-around{
-    border-radius: 50px;
+
+/*Set the mid-width for the whole screen*/
+.wd-explore-screen {
+    min-width: 400px;
+    margin-left: 16px;
 }
+
+/*Search tuiter tab*/
+.wd-search {
+    width: 70%;
+    float: left;
+    border-radius: 5px;
+    color: rgb(29,162,242);
+    padding: 5px;
+}
+
+/*Small icon next to the search tab*/
+.wd-settings {
+    float: right;
+}
+
+/*Search tuiter tab*/
+/*.wd-nav-tabs {*/
+/*    width: 80%;*/
+/*    float: left;*/
+/*    color: rgb(29,162,242);*/
+/*    padding: 0px*/
+/*}*/
+
+/*.wd-nav-tabs .li div {*/
+/*    list-style-type: none;*/
+/*    display: inline-block;*/
+/*    padding: 5px;*/
+/*}*/
+
+/*.wd-nav-tabs .li-selected div {*/
+/*    border-bottom: solid 4px rgb(29,161,242);*/
+/*}*/
+
+/*.wd-nav-tabs li div {*/
+/*    padding: 5px;*/
+/*}*/
+
+
+/*.rounded-corners-all-around{*/
+/*    border-radius: 50px;*/
+/*}*/
+
