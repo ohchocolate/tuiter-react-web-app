@@ -44,6 +44,44 @@ body{
     font-size: 15px;
     max-width: 506px;
     margin-top: 5px;
-    margin-bottom: 12px;
     display: inline-block;
+}
+
+.wd-frame {
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+.wd-picture {
+    width: 504px;
+    height: 264px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-bottom: 0;
+    border-bottom-color: lightgrey;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.wd-title {
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.wd-overview {
+    font-weight: normal;
+    font-size: 15px;
+    color: lightgrey;
+    padding: 12px;
+    border-bottom-color: lightgrey;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
