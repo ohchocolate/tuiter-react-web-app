@@ -108,13 +108,21 @@ body{
     position: relative;
 }
 
-.wd-reaction-heart {
+.wd-reaction-red-heart {
     color: red;
     font-size: 20px;
 }
 
 .wd-reaction-num {
     color: lightgray;
+    font-size: 15px;
+    margin-left: 12px;
+    margin-top: 2px;
+    position: absolute;
+}
+
+.wd-reaction-num-red {
+    color: red;
     font-size: 15px;
     margin-left: 12px;
     margin-top: 2px;
