@@ -274,11 +274,13 @@ p#id-selector-2 {
 .animation-keyframes {
     position: relative;
     top: 0px;
-    animation-duration: 7s;
+    animation-duration: 3s;
     animation-name: slidein;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
     width: 200px;
     height: 200px;
-    background-color: red;
+    background-color: lightskyblue;
     color: white;
 }
 
@@ -286,21 +288,21 @@ p#id-selector-2 {
     from {
         position: relative;
         top: 0px;
-        font-size: 100%;
+        font-size: 16px;
         margin-left: 100%;
         width: 200px;
         height: 200px;
-        background-color: yellow;
+        background-color: lightyellow;
         color: black;
     } /* continued on right */
     50% {
         position: relative;
         top: -200px;
-        font-size: 300%;
+        font-size: 100%;
         margin-left: 25%;
         width: 400px;
         height: 400px;
-        background-color: blue;
+        background-color: lightpink;
         color: white;
     }
 
@@ -322,19 +324,19 @@ p#id-selector-2 {
     border-style: solid;
 }
 .flex-box {
-    border: 5px gray solid;
+    border: 3px midnightblue solid;
     margin: 10px;
     padding: 10px;
 }
 .flex-box-1 {
-    background-color: yellow;
+    background-color: wheat;
 }
 .flex-box-2 {
-    background-color: blue;
+    background-color: lightskyblue;
     color: white;
 }
 .flex-box-3 {
-    background-color: red;
+    background-color: pink;
     color: white;
 }
 
@@ -342,10 +344,45 @@ p#id-selector-2 {
     border-width: 5px;
     border-color: black;
     border-style: solid;
+}
+
+.flex-container-flex-display {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
     display: flex;
 }
 
+.flex-container-center {
+    border-width: 5px;
+    border-color: saddlebrown;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+}
 
+.flex-container-end {
+    border-width: 5px;
+    border-color: mediumpurple;
+    border-style: solid;
+    display: flex;
+    justify-content: end;
+}
 
+.flex-container-space-around {
+    border-width: 5px;
+    border-color: deeppink;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container-space-between {
+    border-width: 5px;
+    border-color: limegreen;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
 
 
