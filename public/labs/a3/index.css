@@ -385,4 +385,103 @@ p#id-selector-2 {
     justify-content: space-between;
 }
 
+.flex-container-align-start {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.flex-container-align-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-container-horizontally-vertically-align {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+
+.flex-container-horizontally-vertically-align > .flex-box {
+    flex-basis: 100%;
+}
+
+@media (min-width: 0px)
+and (max-width: 600px) {
+    body {
+        background-color: orangered;
+    }
+    .media-query {
+        background-color: red;
+        color: white;
+    }
+    .heading {
+        background-color: darkturquoise;
+        color: white;
+    }
+    .paragraph {
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .div {
+        border-style: dot-dot-dash;
+        border-color: gold;
+    }
+}
+
+@media (min-width: 600px)
+and (max-width: 1200px) {
+    body {
+        background-color: blue;
+        color: white;
+    }
+    .media-query {
+        background-color: yellow;
+        color: black;
+    }
+    .heading {
+        background-color: cyan;
+        color: black;
+    }
+    .paragraph {
+        font-size: 40px;
+        font-weight: normal;
+    }
+    .div {
+        border-style: dashed;
+        border-color: hotpink;
+    }
+}
+
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+    body {
+        background-color: grey;
+        color: white;
+    }
+    .media-query {
+        background-color: green;
+        color: white;
+    }
+    .heading {
+        background-color: cyan;
+        color: black;
+    }
+    .paragraph {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .div {
+        border-style: solid;
+        border-color: firebrick;
+    }
+}
 
