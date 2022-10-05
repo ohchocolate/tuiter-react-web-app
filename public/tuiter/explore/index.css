@@ -1,9 +1,8 @@
 /*Naming conventions: all classes start with wd*/
 
 body{
-    font-family: "Arial";
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 /*Set the mid-width for the whole screen*/
