@@ -9,7 +9,7 @@
     <link href="index.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="container pt-1">
+<div class="container m-auto pt-1">
     <div class="row">
         <div class="col-2">
             <div class="list-group">
@@ -19,45 +19,45 @@
                 <a href="../home.html"
                    class="list-group-item list-group-item-action">
                     <i class="fa fa-home"></i>
-                    Home
+                    <span class="d-done d-xl-inline d-none d-sm-none">Home</span>
                 </a>
                 <a href="../explore/index.html"
                    class="list-group-item list-group-item-action active">
-                    <i>#</i>
-                    Explore
+                    <i class="fa fa-hashtag"></i>
+                    <span class="d-done d-xl-inline d-none d-sm-none">Explore</span>
                 </a>
                 <a href="../notification.html"
                    class="list-group-item list-group-item-action">
                     <i class="fa fa-bell"></i>
-                    Notifications
+                    <span class="d-done d-xl-inline d-none d-sm-none">Notifications</span>
                 </a>
                 <a
                    class="list-group-item list-group-item-action">
                     <i class="fa fa-envelope"></i>
-                    Messages
+                    <span class="d-done d-xl-inline d-none d-sm-none">Messages</span>
                 </a>
                 <a href="public/tuiter/bookmarks/index.html"
                    class="list-group-item list-group-item-action">
                     <i class="fa fa-bookmark"></i>
-                    Bookmarks
+                    <span class="d-done d-xl-inline d-none d-sm-none">Bookmarks</span>
                 </a>
                 <a
                    class="list-group-item list-group-item-action">
                     <i class="fa fa-list"></i>
-                    list
+                    <span class="d-done d-xl-inline d-none d-sm-none">List</span>
                 </a>
                 <a href="../profile.html"
                    class="list-group-item list-group-item-action">
                     <i class="fa fa-user"></i>
-                    profile
+                    <span class="d-done d-xl-inline d-none d-sm-none">Profile</span>
                 </a>
                 <a
                    class="list-group-item list-group-item-action">
                     <i class="fa fa-dot-circle"></i>
-                    more
+                    <span class="d-done d-xl-inline d-none d-sm-none">More</span>
                 </a>
             </div>
-            <button class="btn btn-primary w-100 mt-1 rounded-pill">
+            <button id="tuit-button" class="btn btn-primary w-100 mt-1 rounded-pill">
                 Tuit
             </button>
         </div>
@@ -89,18 +89,19 @@
                         News
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-sm-none d-md-block d-lg-block">
                     <a class="nav-link" href="#" tabindex="-1">
                         Sports
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-sm-none d-md-none d-xl-inline-block">
                     <a class="nav-link" href="#" tabindex="-1">
-                        Entertainment
+                        <span class="d-none d-sm-none d-md-none d-xl-inline-block">Entertainment</span>
                     </a>
                 </li>
             </ul>
 
+<!--            middle content-->
             <div class="position-relative">
                 <img src="../../images/husky.jpg" width="100%"/>
                 <h1 class="position-absolute bottom-0 left-0 text-white">Happy Husky</h1>
@@ -114,7 +115,7 @@
                                 Web Development
                             </div>
                             <div class="fw-bolder">
-                                ReactJS - 2h
+                                ReactJS<i class="fas fa-check-circle"></i> - 2h
                             </div>
                             <div class="fw-bolder">
                                 React.js is a Single Page Application framework
@@ -125,10 +126,44 @@
                         </div>
                     </div>
                 </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="fw-bolder">
+                                JavaScript<i class="fas fa-check-circle"></i> - 2h
+                            </div>
+                            <div class="fw-bolder">
+                                JavaScript is programming language that can run on browsers as well as desktops
+                            </div>
+                            <div class="fw-light">
+                                123K Tuits
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img class="float-end" src="../../images/react.png" height="100px">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bolder">
+                                JQuery
+                            </div>
+                            <div class="fw-bolder">
+                                JavaScript is programming language that can run on browsers as well as desktops
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img class="float-end" src="../../images/react.png" height="100px">
+                        </div>
+                    </div>
+                </li>
                 <li class="list-group-item">Tuit 234</li>
                 <li class="list-group-item">Tuit 345</li>
-                <li class="list-group-item">Tuit 456</li>
-                <li class="list-group-item">Tuit 567</li>
             </ul>
 
         </div>
