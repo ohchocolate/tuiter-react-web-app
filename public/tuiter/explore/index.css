@@ -1,9 +1,5 @@
 /*Naming conventions: all classes start with wd*/
 
-body{
-    background-color: white;
-    color: black;
-}
 
 /*Set the mid-width for the whole screen*/
 .wd-explore-screen {
