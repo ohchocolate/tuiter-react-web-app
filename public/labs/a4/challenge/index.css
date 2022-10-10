@@ -25,6 +25,10 @@
 .wd-nav-tab {
     color: darkgray;
 }
+
+.wd-divider {
+    border: 1px solid grey;
+}
 /*!*Small icon next to the search tab*!*/
 /*.wd-settings {*/
 /*    float: right;*/
