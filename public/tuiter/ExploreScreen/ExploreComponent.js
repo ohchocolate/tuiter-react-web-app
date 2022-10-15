@@ -1,11 +1,14 @@
-import PostSummaryList from "../PostSummaryList";
+import PostSummaryList from "../PostSummaryList/index.js";
 
 const ExploreComponent = () => {
     return(`
+        <div class="row">
+            <div class="col-10">
             <!--search-->
             <div class="position-relative">
                 <i class="fas fa-search fa-2x position-absolute m-1" style="color: lightgray"></i>
                 <input class="ps-5 form-control rounded-pill" placeholder="Search Tuiter">
+            </div>
             </div>
             <div class="col-2">
                 <i class="fas fa-cog fa-2x" style="color:#0d6efd"></i>
@@ -49,9 +52,9 @@ const ExploreComponent = () => {
             <div class="position-relative">
                 <img src="https://s.hdnux.com/photos/01/23/33/15/21869409/4/rawImage.jpg" width="100%"/>
                 <h1 class="position-absolute bottom-0 left-0 text-white">SpaceX's Starship</h1>
-            </div>
-            ${PostSummaryList()}
+            </div>    
+        </div>    
+       ${PostSummaryList()}
     `);
-
 }
 export default ExploreComponent;
