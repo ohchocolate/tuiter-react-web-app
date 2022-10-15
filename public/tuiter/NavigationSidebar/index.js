@@ -1,6 +1,6 @@
 const NavigationSidebar = (active) => {
     return(`
-            <div class="list-group">
+            <div class="list-group" id="wd-nav-sidebar">
                 <a href="#" class="list-group-item list-group-item-action">
                     <i class="fab fa-twitter"></i>
                 </a>
