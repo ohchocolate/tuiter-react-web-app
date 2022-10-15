@@ -1,4 +1,3 @@
-
 const WhoToFollowListItem = (who) => {
     return(`
     <li class="list-group-item">
