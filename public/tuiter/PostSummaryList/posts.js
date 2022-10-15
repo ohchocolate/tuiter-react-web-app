@@ -1,6 +1,5 @@
 // create a post array
-let exploreItems;
-export default exploreItems = [
+export default [
     {
         topic: "Web Development",
         userName: "ReactJS",
