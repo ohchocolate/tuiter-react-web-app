@@ -1,7 +1,7 @@
 /* eslint-env jquery */
 import NavigationSidebar from "../NavigationSidebar/index.js";
-import PostSummaryList from "../PostSummaryList.js";
-
+import PostItem from "../PostList/PostItem.js";
+import PostSummaryList from "../PostSummaryList/index.js";
 
 function exploreComponent() {
     $('#wd-explore').append(`
