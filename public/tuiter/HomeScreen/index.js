@@ -1,6 +1,6 @@
 /* eslint-env jquery */
 import NavigationSidebar from "../NavigationSidebar/index.js";
-import PostItem from "../PostList/PostItem.js";
+import PostList from "../PostList/PostList.js";
 import PostSummaryList from "../PostSummaryList/index.js";
 
 function exploreComponent() {
@@ -10,7 +10,7 @@ function exploreComponent() {
                         ${NavigationSidebar('Explore')}
                     </div>
                     <div class="col-10 col-md-10 col-lg-7 col-xl-6">
-                        ${PostItem()}
+                        ${PostList()}
                     </div>
                     <div class="col-lg-4 col-xl-4 d-none d-lg-block">
                         ${PostSummaryList()}
