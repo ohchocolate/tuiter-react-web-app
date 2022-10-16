@@ -2,12 +2,12 @@
 const PictureSummary = (post) => {
     // if there is no title in the post
     // === strictly equal
-    if (post.title == undefined) {
+    if (post.title === undefined) {
         return (`
         <!-- a big picture -->
         <div class="col-12">
-                <div class="wd-border-thin wd-rounded-corners-all-around">
-                    <img class="img-fluid wd-rounded-corners-all-around" src="${post.image}"/>
+                <div class="wd-border-thin">
+                    <img class="img-fluid" src="${post.image}"/>
                 </div>
         </div>
         `);
@@ -15,9 +15,9 @@ const PictureSummary = (post) => {
     else {
         return (`
         <!-- a big picture -->
-        <div class="col-12">
-            <div class="wd-border-thin wd-rounded-corners-top">
-                <img class="img-fluid wd-rounded-corners-all-around" src="${post.image}"/>
+        <div class="col-12 rounded-top rounded-bottom">
+            <div class="wd-border-thin">
+                <img class="img-fluid" src="${post.image}"/>
             </div>
         </div>
         <!-- a text summary -->
