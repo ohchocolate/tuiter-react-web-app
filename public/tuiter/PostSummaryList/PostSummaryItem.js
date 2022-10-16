@@ -7,7 +7,7 @@ const PostSummaryItem = (post) => {
                 <div class="text-secondary">
                     ${post.topic}
                 </div>
-                <div class="fw-bolder wd-tuiter-author">
+                <div class="fw-bolder wd-author">
                     ${post.userName}<i class="fas fa-check-circle"></i> -${post.time}
                 </div>
                 <div class="fw-bolder">
