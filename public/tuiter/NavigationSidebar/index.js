@@ -18,31 +18,37 @@ const NavigationSidebar = (active) => {
                 </a>
                 <a href="../notification.html"
                    class="list-group-item list-group-item-action">
+                   
                     <i class="fa fa-bell"></i>
                     <span class="d-done d-xl-inline d-none d-sm-none">Notifications</span>
                 </a>
                 <a
                    class="list-group-item list-group-item-action">
+                   
                     <i class="fa fa-envelope"></i>
                     <span class="d-done d-xl-inline d-none d-sm-none">Messages</span>
                 </a>
                 <a href="public/tuiter/bookmarks/index.html"
                    class="list-group-item list-group-item-action">
+                   
                     <i class="fa fa-bookmark"></i>
                     <span class="d-done d-xl-inline d-none d-sm-none">Bookmarks</span>
                 </a>
                 <a
                    class="list-group-item list-group-item-action">
+                   
                     <i class="fa fa-list"></i>
                     <span class="d-done d-xl-inline d-none d-sm-none">List</span>
                 </a>
                 <a href="../profile.html"
                    class="list-group-item list-group-item-action">
+                   
                     <i class="fa fa-user"></i>
                     <span class="d-done d-xl-inline d-none d-sm-none">Profile</span>
                 </a>
                 <a
                    class="list-group-item list-group-item-action">
+                   
                     <i class="fa fa-dot-circle"></i>
                     <span class="d-done d-xl-inline d-none d-sm-none">More</span>
                 </a>
