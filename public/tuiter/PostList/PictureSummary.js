@@ -15,9 +15,9 @@ const PictureSummary = (post) => {
     else {
         return (`
         <!-- a big picture -->
-        <div class="col-12 rounded-top rounded-bottom">
+        <div class="col-12">
             <div class="wd-border-thin">
-                <img class="img-fluid" src="${post.image}"/>
+                <img class="img-fluid wd-picture" src="${post.image}"/>
             </div>
         </div>
         <!-- a text summary -->
