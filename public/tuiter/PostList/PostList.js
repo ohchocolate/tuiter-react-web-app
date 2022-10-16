@@ -6,3 +6,4 @@ const PostList = () => {
             ${posts.map((post) => PostItem(post)).join("")}
     `)
 }
+export default PostList;
