@@ -29,4 +29,4 @@ export default [
         retweet_count: '2.4k',
         like_count: '4k',
     },
-]
+];
