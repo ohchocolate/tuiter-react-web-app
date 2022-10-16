@@ -10,7 +10,7 @@ export default [
         title: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
         summary:
             'From training to launch to landing, this all-access docuseries rides along with the ' +
-            'Inspiration4 crew on thefirst all-civilian orbital space ...',
+            'Inspiration4 crew on the first all-civilian orbital space ...',
         link: 'netflix.com',
         comment_count: '4.2k',
         retweet_count: '3.5k',
