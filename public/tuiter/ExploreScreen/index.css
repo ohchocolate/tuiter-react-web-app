@@ -1,4 +1,7 @@
 /*Naming conventions: all classes start with wd*/
 
 /*Set the mid-width for the whole screen*/
-
+.wd-frame{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
