@@ -17,7 +17,7 @@ function Tuiter() {
                 <WhoToFollowListItem/>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Tuiter
+export default Tuiter;
