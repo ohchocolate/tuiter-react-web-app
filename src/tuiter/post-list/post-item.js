@@ -23,7 +23,7 @@ const PostItem = ({
         <>
             <div className="rounded row m-0 ps-2 pe-2 pt-2 pb-2">
                 <div className="col-1 justify-content-center">
-                    <div><img className="rounded-circle wd-avatar" src={post.icon} height="100px"/></div>
+                    <div><img className="rounded-circle wd-avatar" src={post.icon} height="60px"/></div>
                 </div>
 
                 <div className="col-11 row ms-2">
