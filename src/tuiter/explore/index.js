@@ -26,6 +26,12 @@ const ExploreComponent = () => {
                 <li className="nav-item">
                     <a className="nav-link">News</a>
                 </li>
+                <li className="nav-item">
+                    <a className="nav-link">Sports</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link">Entertainment</a>
+                </li>
             </ul>
             <div className="position-relative mb-2">
                 <img src="https://s.hdnux.com/photos/01/23/33/15/21869409/4/rawImage.jpg" className="w-100"/>
