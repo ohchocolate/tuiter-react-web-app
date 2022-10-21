@@ -1,25 +1,24 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useLocation} from "react-router";
 
-const NavigationSidebar = (
-    {
-        active = 'explore'
-    }
-) => {
-    // noinspection CheckTagEmptyBody
+const NavigationSidebar = () => {
+    const {pathname} = useLocation();
+    const paths = pathname.split('/')
+    const active = paths[2];
     return (
         <div className="rounded list-group">
-            <Link to="/tuiter" className="list-group-item list-group-item-action">
+            <a href='#' className="list-group-item list-group-item-action">
                 Tuiter
-            </Link>
-            <Link to="/tuiter/ex" className={`list-group-item
+            </a>
+            <Link to="/tuiter/home" className={`list-group-item
                     ${active === 'home'?'active':''}`}>
                 Home
             </Link>
-            <a className={`list-group-item
+            <Link to='/tuiter/explore' className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
                 Explore
-            </a>
+            </Link>
             <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
                 Notifications
