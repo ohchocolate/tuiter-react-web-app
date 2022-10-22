@@ -8,7 +8,7 @@ const PictureSummary = ({
         return (
             <div className="col-12 wd-frame">
                 <div className="wd-border-thin">
-                    <img className="img-fluid" src={post.image}/>
+                    <img className="img-fluid" alt="post-realted" src={post.image}/>
                 </div>
             </div>
         );
@@ -18,7 +18,7 @@ const PictureSummary = ({
             <>
                 <div className="col-12 wd-frame">
                     <div className="wd-border-thin">
-                        <img className="img-fluid wd-picture" src={post.image}/>
+                        <img className="img-fluid wd-picture" alt="post-related" src={post.image}/>
                     </div>
                 </div>
                 <div className="col-12">
