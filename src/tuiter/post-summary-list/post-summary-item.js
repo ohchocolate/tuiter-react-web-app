@@ -15,7 +15,7 @@ const PostSummaryItem = (
             <div className="col-12 list-group">
                 <div className="list-group-item">
                     <div>
-                        <img className="float-end rounded" src={post.image} height="100px">
+                        <img alt="round-post" className="float-end rounded" src={post.image} height="100px">
                         </img>
                     </div>
                     <div className="text-secondary">
