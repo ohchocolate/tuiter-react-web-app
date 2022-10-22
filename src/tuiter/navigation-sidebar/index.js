@@ -19,19 +19,19 @@ const NavigationSidebar = () => {
                     ${active === 'explore'?'active':''}`}>
                 <i className="fa fa-hashtag"></i> Explore
             </Link>
-            <a className={`list-group-item
+            <a href="#" className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
                 <i className="fa fa-bell"></i> Notifications
             </a>
-            <a className={`list-group-item
+            <a href="#" className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
                 <i className="fa fa-envelope"></i> Messages
             </a>
-            <a className={`list-group-item
+            <a href="#" className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
                 <i className="fa fa-bookmark"></i> Bookmarks
             </a>
-            <a className={`list-group-item
+            <a href="#" className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
                 <i className="fa fa-list"></i> Lists
             </a>
