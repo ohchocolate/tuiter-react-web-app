@@ -17,7 +17,7 @@ const PostItem = ({
                     <div className="col-11 mb-2">
                         <p>
                             <span className="wd-author">{post.userName}&nbsp;
-                                <i className="fas fa-check-circle"></i></span>&nbsp;
+                                <i className="fas fa-check-circle"/></span>&nbsp;
                             @{post.handle}&nbsp;•&nbsp;{post.time}
                         </p>
                         <div className="wd-content">{post.content}</div>
