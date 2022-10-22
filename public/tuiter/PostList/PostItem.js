@@ -3,7 +3,8 @@ const PostItem = (post) => {
     return(`
           <div class="rounded row m-0 ps-2 pe-2 pt-2 pb-2">
             <div class="col-1 justify-content-center">
-                <div><img class="rounded-circle wd-avatar" src="${post.icon}" height="100px"></div>
+                <div>
+                <img alt="post-icon" class="rounded-circle wd-avatar" src="${post.icon}" height="100px"></div>
             </div>
         
             <div class="col-11 row ms-2">
