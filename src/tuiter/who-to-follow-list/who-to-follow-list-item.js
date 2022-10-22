@@ -14,7 +14,7 @@ const WhoToFollowListItem = (
             <div className="row d-flex justify-content-between">
                 <div className="col-9">
                     <div className="row">
-                        <img src={who.avatarIcon} className="rounded-circle col-3"/>
+                        <img alt="avatar" src={who.avatarIcon} className="rounded-circle col-3"/>
                             <div className="col">
                                 <div className="fw-bolder">
                                     {who.userName}
