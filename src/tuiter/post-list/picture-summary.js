@@ -6,7 +6,7 @@ const PictureSummary = ({
 }) => {
     if (post.title === undefined) {
         return (
-            <div className="col-12">
+            <div className="col-12 wd-frame">
                 <div className="wd-border-thin">
                     <img className="img-fluid" src={post.image}/>
                 </div>
@@ -16,7 +16,7 @@ const PictureSummary = ({
     else {
         return (
             <>
-                <div className="col-12">
+                <div className="col-12 wd-frame">
                     <div className="wd-border-thin">
                         <img className="img-fluid wd-picture" src={post.image}/>
                     </div>
