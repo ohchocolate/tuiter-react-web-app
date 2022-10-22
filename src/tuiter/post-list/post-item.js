@@ -31,22 +31,22 @@ const PostItem = ({
                     <div className="col-12 d-flex m-auto justify-content-between">
                         <div>
                             <span>
-                            <i className="far fa-comment fa-flip-horizontal"></i>
+                            <i className="far fa-comment fa-flip-horizontal"/>
                             </span>{post.comment_count}
                         </div>
                         <div>
-                            <span><i className="fas fa-retweet"></i></span>
+                            <span><i className="fas fa-retweet"/></span>
                             {post.retweet_count}</div>
                         <div>
-                            <span><i className="fas fa-heart"></i></span>
+                            <span><i className="fas fa-heart"/></span>
                             {post.like_count}</div>
                         <div>
-                            <i className="fas fa-external-link-alt"></i>
+                            <i className="fas fa-external-link-alt"/>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr></hr>
+            <hr/>
         </>
     );
 };
