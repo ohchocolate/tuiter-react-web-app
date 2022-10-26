@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector}
     from "react-redux";
-import {addTodo}
+import {addTodo, deleteTodo, todoDoneToggle}
     from "./reducers/todos-reducer";
 
 const Todos = () => {
@@ -21,27 +21,45 @@ const Todos = () => {
     const createTodoClickHandler = () => {
         dispatch(addTodo(todo))
     };
+    const deleteTodoClickHandler = (index) => {
+        dispatch(deleteTodo(index))
+    }
+    const toggleTodoDone = (todo) => {
+        dispatch(todoDoneToggle(todo))
+    }
 
     return (
         <>
             <h3>Todos</h3>
             <ul className="list-group">
                 <li className="list-group-item">
-                    <input
-                        onChange={todoChangeHandler}
-                        value={todo.do}
-                        className="form-control"/>
-                </li>
-                <li className="list-group-item">
                     <button onClick={createTodoClickHandler}
                             className="btn btn-primary w-25
-                      float-end">
-                        Create
-                    </button>
+                          float-end">
+                        Create</button>
                     <input onChange={todoChangeHandler}
                            value={todo.do}
                            className="form-control w-75"/>
                 </li>
+                {
+                    todos.map((todo, ndx) =>
+                        <li key={todo._id}
+                            className="list-group-item">
+                            <button onClick={() =>
+                                deleteTodoClickHandler(ndx)}
+                                    className="btn btn-danger
+                        float-end ms-2">
+                                Delete
+                            </button>
+                            <input type="checkbox"
+                                   checked={todo.done}
+                                   onChange={() =>
+                                       toggleTodoDone(todo)}
+                                   className="me-2"/>
+                            {todo.do}
+                        </li>
+                    )
+                }
             </ul>
         </>
     );

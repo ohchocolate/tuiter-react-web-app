@@ -24,7 +24,21 @@ const todosSlice = createSlice({
                 done: false
             });
         },
+        deleteTodo(state, action) {
+            const index = action.payload
+            state.splice(index, 1)
+        },
+        todoDoneToggle(state, action) {
+            const todo = state.find((todo) =>
+                //remember to use payload._id for matching the check items
+                todo._id === action.payload._id)
+            todo.done = !todo.done
+        }
     }
 });
-export const {addTodo} = todosSlice.actions
+// export actions so we can call them from UI
+export const {
+    addTodo,
+    deleteTodo,
+    todoDoneToggle} = todosSlice.actions
 export default todosSlice.reducer
