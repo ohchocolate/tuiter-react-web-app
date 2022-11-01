@@ -1,14 +1,11 @@
 import React from 'react';
 
-const PictureSummary = ({
-    post = {
-    },
-}) => {
+const PictureSummary = ({post}) => {
     if (post.title === undefined) {
         return (
             <div className="col-12 wd-frame">
                 <div className="wd-border-thin">
-                    <img className="img-fluid" alt="post-realted" src={post.image}/>
+                    <img className="img-fluid" alt="post-username" src={post.image}/>
                 </div>
             </div>
         );
@@ -26,7 +23,7 @@ const PictureSummary = ({
                         <div className="wd-author">{post.title}</div>
                         <span>{post.summary}</span>
                         <span>
-                            <i className="fas fa-link fa-xs"></i>{post.link}
+                            <i className="fas fa-link fa-xs"/>{post.link}
                         </span>
                     </div>
                 </div>
