@@ -50,6 +50,10 @@ const TuitStats = ({ tuit }) => {
             </div>
         </div>
     );
+
+
+
+
 };
 
 export default TuitStats;

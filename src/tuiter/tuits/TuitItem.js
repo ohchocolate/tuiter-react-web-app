@@ -16,7 +16,7 @@ const TuitItem = ({tuit}) => {
                 <div className='col-1 justify-content-center'>
                     <img
                         className='wd-circle-icon'
-                        src={tuit.logo_image}
+                        src={tuit.image}
                         alt={tuit.username}
                     />
                 </div>

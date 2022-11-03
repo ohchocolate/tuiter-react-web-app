@@ -1,7 +1,5 @@
-
-
 import React from 'react';
-import TuitListItem from './TuitItem.js';
+import TuitItem from './TuitItem.js';
 import { useSelector } from 'react-redux';
 
 const TuitList = () => {
@@ -10,7 +8,7 @@ const TuitList = () => {
     return (
         <>
             {tuits.map((tuit) => (
-                <TuitListItem key={tuit._id} tuit={tuit} />
+                <TuitItem key={tuit._id} tuit={tuit} />
             ))}
         </>
     );
