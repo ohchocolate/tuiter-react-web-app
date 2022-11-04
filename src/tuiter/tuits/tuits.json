@@ -5,7 +5,7 @@
     "userName": "SpaceX",
     "time": "2h",
     "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
-    "image": "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/TXDGVXPBEVMY5PA2RHRF2EA25Y.jpg",
+    "image": "https://www.spacex.com/static/images/share.jpg",
     "liked": true,
     "replies": 123,
     "retuits": 432,
@@ -15,12 +15,18 @@
 
   },
   {
+    "_id": 123,
     "topic": "Web Development",
     "userName": "JavaScript",
     "time": "2h",
     "title": "JavaScript is programming language that can run on browsers as well as desktops",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-    "tweets": "123K"
+    "liked": false,
+    "replies": 345,
+    "retuits": 225,
+    "likes": 2345,
+    "handle": "@java_script",
+    "tuit": "some dummy text"
   },
   {
     "topic": "Web Development",

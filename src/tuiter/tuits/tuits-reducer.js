@@ -24,12 +24,30 @@ const tuitsSlice = createSlice({
         createTuit(state, action) {
             state.unshift({
                 ...action.payload,
-                ...templateTuit,
+                ...templateTuit, //copy the tuit from the templateTuit
                 _id: (new Date()).getTime(),
             })
+        },
+        deleteTuit(state, action) {
+            const index = this.state.findIndex(tuit => tuit._id === action.payload._id);
+            state.splice(index, 1);
+        },
+        likeTuit(state, action) {
+            const index = this.state.findIndex(tuit => tuit._id === action.payload._id);
+            state[index].liked = true;
+            state[index].likes += 1;
+        },
+        unlikeTuit(state, action) {
+            const index = this.state.findIndex(tuit => tuit._id === action.payload._id);
+            state[index].liked = false;
+            state[index].likes -= 1;
         }
     }
 });
 
-export const {createTuit} = tuitsSlice.actions;
+export const {
+    createTuit,
+    deleteTuit,
+    likeTuit,
+    unlikeTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
