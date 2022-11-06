@@ -13,27 +13,28 @@ const TuitItem = ({tuit}) => {
     return (
         <>
             <li className="list-group-item">
-                <div className="row">
-                    <div className="col">
+                <div className="row d-flex justify-content-between">
+                <div className="col-2">
+                    <div className="row">
                         <img width={50} alt="tuit-round-logo"
                              className="float-end rounded-circle"
                              src={tuit.image}/>
                     </div>
-                    <div className='col'>
-                        <div className="fw-bolder">
-                            {tuit.userName}<i className='fas fa-check-circle'/>
-                            <span className="text-secondary fw-normal">
+                </div>
+                <div className="col-10">
+                    <div className="fw-bolder">
+                        {tuit.userName}<i className='fas fa-check-circle'/>
+                        <span className="text-secondary fw-normal">
                                 {tuit.handle}
-                                ·{tuit.time}
+                            ·{tuit.time}
                             </span>
                         <i className="bi bi-x-lg float-end"
                            onClick={() => deleteTuitHandler(tuit._id)}/>
-                        </div>
-                        <div>
-                            {tuit.tuit}
-                        </div>
                     </div>
-
+                    <div>
+                        {tuit.tuit}
+                    </div>
+                </div>
                 </div>
             </li>
 
