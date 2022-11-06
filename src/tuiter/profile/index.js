@@ -1,10 +1,11 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import {useSelector} from 'react-redux';
 import { Link } from 'react-router-dom';
 
-const ProfileComponent = () => {
-    const profile = useSelector((state) => state.profile);
+const Index = () => {
+    const profile = useSelector(state => state.profile);
 
+    console.log(profile)
     return (
         <>
             <div className='row'>
@@ -12,10 +13,11 @@ const ProfileComponent = () => {
                     <i className='fa-solid fa-arrow-left'/>
                 </Link>
                 <span className='col'>
+                    something
                  {/*<h4 className='my-1'>{profile.firstname}{profile.lastname}</h4>*/}
-                 {/*   <p className='m-0 wd-font-grey wd-font-size-15px wd-font-family-arial'>*/}
-                 {/*   {profile.tuitsCount} Tuits*/}
-                 {/*   </p>*/}
+                    {/*<p className='m-0 wd-font-grey wd-font-size-15px wd-font-family-arial'>*/}
+                    {/*{profile.tuitsCount} Tuits*/}
+                    {/*</p>*/}
                 </span>
             </div>
         {/*    <div className='col-12 position-relative wd-profile-banner-div'>*/}
@@ -79,4 +81,4 @@ const ProfileComponent = () => {
     );
 };
 
-export default ProfileComponent;
+export default Index;

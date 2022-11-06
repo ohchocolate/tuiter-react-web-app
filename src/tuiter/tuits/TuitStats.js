@@ -1,6 +1,6 @@
 import {useDispatch} from 'react-redux';
 import React from 'react';
-import {likeTuit, unlikeTuit} from "./tuits-reducer";
+import {likeTuit} from "../reducers/tuits-reducer";
 
 const TuitStats = ({ tuit }) => {
     const dispatch = useDispatch();

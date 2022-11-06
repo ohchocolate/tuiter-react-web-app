@@ -1,6 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-const initialProfile = {
-    profile: {
+const profile = {
         "firstname": "Eva",
         "lastname": "Z",
         "handle": "ohchocolate",
@@ -13,22 +12,18 @@ const initialProfile = {
         "dateJoined": "8/2021",
         "followingCount": 666,
         "followersCount": 888,
-        "tuitsCount": 333}
-};
+        "tuitsCount": 333
+}
 
 const profileSlice = createSlice({
     name: 'profile',
-    initialState: initialProfile,
+    initialState: profile,
     reducers: {
         editProfile(state, action) {
-            switch (action.type) {
-                case 'EDIT_PROFILE_SUCCESS':
-                    return action.payload;
-                default:
-                    return state;
-            }
-        }
+            return state = action.payload;
+        },
     }
 });
 
-export default profileSlice.reducer
+export const {editProfile} = profileSlice.actions;
+export default profileSlice.reducer;
