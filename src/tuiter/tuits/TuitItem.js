@@ -2,6 +2,7 @@ import React from 'react';
 import {useDispatch } from 'react-redux';
 
 import {deleteTuit} from "./tuits-reducer";
+import TuitStats from "./TuitStats";
 
 const TuitItem = ({tuit}) => {
     const dispatch = useDispatch();
@@ -14,33 +15,32 @@ const TuitItem = ({tuit}) => {
         <>
             <li className="list-group-item">
                 <div className="row d-flex justify-content-between">
-                <div className="col-2">
-                    <div className="row">
-                        <img width={50} alt="tuit-round-logo"
-                             className="float-end rounded-circle"
-                             src={tuit.image}/>
+                    <div className="col-2">
+                        <div className="row">
+                            <img width={50} alt="tuit-round-logo"
+                                 className="float-end rounded-circle"
+                                 src={tuit.image}/>
+                        </div>
                     </div>
-                </div>
-                <div className="col-10">
-                    <div className="fw-bolder">
-                        {tuit.userName}<i className='fas fa-check-circle'/>
-                        <span className="text-secondary fw-normal">
-                                {tuit.handle}
-                            ·{tuit.time}
-                            </span>
-                        <i className="bi bi-x-lg float-end"
-                           onClick={() => deleteTuitHandler(tuit._id)}/>
+                    <div className="col-10">
+                        <div className="fw-bolder">
+                            {tuit.userName}{" "}
+                            <i className='fas fa-check-circle'/>
+                            {" "}
+                            <span className="text-secondary fw-normal">
+                                    {tuit.handle}
+                                {" "}·{" "}{tuit.time}
+                                </span>
+                            <i className="bi bi-x-lg float-end"
+                               onClick={() => deleteTuitHandler(tuit._id)}/>
+                        </div>
+                        <div>
+                            {tuit.tuit}
+                        </div>
+                        <TuitStats tuit={tuit} />
                     </div>
-                    <div>
-                        {tuit.tuit}
-                    </div>
-                </div>
                 </div>
             </li>
-
-
-
-
         </>
     );
 };

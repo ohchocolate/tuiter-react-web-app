@@ -21,10 +21,10 @@ const tuitsSlice = createSlice({
     name: 'tuits',
     initialState: tuits,
     reducers: {
-        createTuit(state, action) {
+        addTuit(state, action) {
             state.unshift({
                 ...action.payload,
-                ...templateTuit, //copy the tuit from the templateTuit
+                ...templateTuit,
                 _id: (new Date()).getTime(),
             })
         },
@@ -41,13 +41,21 @@ const tuitsSlice = createSlice({
             const index = this.state.findIndex(tuit => tuit._id === action.payload._id);
             state[index].liked = false;
             state[index].likes -= 1;
-        }
+        },
+        updateTuit(state, action) {
+            const tuitIndex = state.findIndex((tuit) => tuit._id === action.payload._id)
+            state[tuitIndex].tuit = action.payload.tuit
+        },
+        replyTuit() {},
+        retuitTuit() {}
     }
 });
 
 export const {
-    createTuit,
+    addTuit,
     deleteTuit,
     likeTuit,
-    unlikeTuit} = tuitsSlice.actions;
+    unlikeTuit,
+    updateTuit
+} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
