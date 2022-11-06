@@ -1,13 +1,18 @@
 import {useDispatch} from 'react-redux';
 import React from 'react';
-// import {likeTuit} from "../reducers/tuits-reducer";
+import {likeTuit, unlikeTuit} from "../reducers/tuits-reducer";
 
 const TuitStats = ({ tuit }) => {
     const dispatch = useDispatch();
 
-    const likeTuit = () => {
-        dispatch({ type: 'likeTuit', tuit });
+    const likeTuitHandler = (tuit) => {
+        dispatch(likeTuit(tuit));
     };
+
+    const unlikeTuitHandler = (tuit) => {
+        dispatch(unlikeTuit(tuit))
+    }
+
 
     return (
         <div className='col-12 d-flex pt-2 pe-5 justify-content-between'>
@@ -30,20 +35,22 @@ const TuitStats = ({ tuit }) => {
                 </button>
             </div>
             <div>
-                <button
-                    className='btn btn-sm wd-bookmark-title wd-font-grey wd-font-size-15px wd-font-family-arial'
-                    onClick={likeTuit}
-                >
-              <span className='wd-margin-right-12px'>
-                {tuit.liked ? (
-                    <i className='fas fa-heart' style={{color: 'red'}}/>
-                ) : (
-                    <i className='fas fa-heart'/>
-                )}
-              </span>
-                    {" "}
-                    {tuit.likes}
-                </button>
+                {
+                    !tuit.liked &&
+                    <button
+                        onClick={() => likeTuitHandler(tuit)}
+                        className='btn btn-sm'>
+                        <i className='fas fa-heart'/> ({tuit.likes})
+                    </button>
+                }
+                {
+                    tuit.liked &&
+                    <button
+                        onClick={() => unlikeTuitHandler(tuit)}
+                        className='btn btn-sm'>
+                        <i className='fas fa-heart' style={{color: 'red'}}/> {tuit.likes}
+                    </button>
+                }
             </div>
             <div>
                 <button className='btn btn-sm wd-bookmark-title wd-font-grey wd-font-size-15px wd-font-family-arial'>

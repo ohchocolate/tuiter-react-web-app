@@ -7,8 +7,8 @@ import TuitStats from "./TuitStats";
 const TuitItem = ({tuit}) => {
     const dispatch = useDispatch();
 
-    const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+    const deleteTuitHandler = (tuit) => {
+        dispatch(deleteTuit(tuit));
     }
 
     return (
