@@ -12,8 +12,6 @@ import ExploreComponent from "./explore";
 import ProfileComponent from "./profile";
 import profileReducer from "./reducers/profile-reducer";
 import EditProfileComponent from "./edit-profile";
-import Labs from "../labs";
-
 
 
 const store = configureStore(
