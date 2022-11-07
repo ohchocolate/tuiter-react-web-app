@@ -12,6 +12,7 @@ import ExploreComponent from "./explore";
 import ProfileComponent from "./profile";
 import profileReducer from "./reducers/profile-reducer";
 import EditProfileComponent from "./edit-profile";
+import Labs from "../labs";
 
 
 
@@ -28,7 +29,7 @@ function Tuiter() {
                 </div>
                 <div className='col-10 col-md-10 col-lg-7 col-xl-6'>
                     <Routes>
-                        <Route path="" element={<HomeComponent/>}/>
+                        <Route index element={<HomeComponent/>}/>
                         <Route path="home"    element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
                         <Route path="profile" element={<ProfileComponent/>}/>
