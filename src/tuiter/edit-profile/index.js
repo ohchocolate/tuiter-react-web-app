@@ -2,92 +2,162 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {useNavigate} from "react-router";
+import {editProfile} from "../reducers/profile-reducer";
 
 const EditProfileComponent = () => {
-    const old_profile = useSelector((state) => state.profile);
-    let [profile, setProfile] = useState(old_profile);
+    const oldProfile = useSelector((state) => state.profile);
+    const [profile, setProfile] = useState(oldProfile);
+    const [firstname, setFirstname] = useState(profile.firstname);
+    const [lastname, setLastname] = useState(profile.lastname);
+    const [bio, setBio] = useState(profile.bio);
+    const [location, setLocation] = useState(profile.location);
+    const [website, setWebsite] = useState(profile.website);
+    const [dateOfBirth, setDOB] = useState(profile.dateOfBirth);
+
 
     const navigate = useNavigate();
 
     const dispatch = useDispatch();
 
-    const inputChangeHandler = (event) => {
-        const input_id = event.target.id;
-        const value = event.target.value || '';
-        let new_profile = profile;
-        switch (input_id) {
-            case 'username':
-                new_profile = { ...profile, username: value };
-                break;
-            case 'bio':
-                new_profile = { ...profile, bio: value };
-                break;
-            case 'location':
-                new_profile = { ...profile, location: value };
-                break;
-            case 'website':
-                new_profile = { ...profile, website: value };
-                break;
-            case 'dateOfBirth':
-                new_profile = { ...profile, dateOfBirth: value };
-                break;
-            default:
-                break;
-        }
-        setProfile(new_profile);
-    };
-
     const saveProfile = () => {
-        dispatch({
-            type: 'EDIT_PROFILE_SUCCESS',
-            payload: profile,
-        });
+        dispatch(editProfile({
+            ...profile,
+            firstname: firstname,
+            lastname: lastname,
+            bio: bio,
+            location: location,
+            website: website,
+            dateOfBirth: dateOfBirth
+        }));
+    }
+
+    const changeRoute = () => {
         navigate('/tuiter/profile');
-    };
+    }
+
+    function changeFirstname(e) {
+        const newFirstname = e.target.value;
+        setFirstname(newFirstname);
+        const newProfile = {
+            ...profile,
+            firstname: newFirstname
+        }
+        setProfile(newProfile)
+    }
+
+    function changeLastname(e) {
+        const newLastname = e.target.value;
+        setLastname(newLastname);
+        const newProfile = {
+            ...profile,
+            lastname: newLastname
+        }
+        setProfile(newProfile)
+    }
+
+    function changeBio(e) {
+        const newBio = e.target.value;
+        setBio(newBio);
+        const newProfile = {
+            ...profile,
+            bio: newBio
+        }
+        setProfile(newProfile)
+    }
+
+    function changeLocation(e) {
+        const newLocation = e.target.value;
+        setLocation(newLocation);
+        const newProfile = {
+            ...profile,
+            location: newLocation
+        }
+        setProfile(newProfile)
+    }
+
+    function changeWebsite(e) {
+        const newWebsite = e.target.value;
+        setWebsite(newWebsite);
+        const newProfile = {
+            ...profile,
+            website: newWebsite
+        }
+        setProfile(newProfile)
+    }
+
+    function changeDOB(e) {
+        const newDOB = e.target.value;
+        setDOB(newDOB);
+        const newProfile = {
+            ...profile,
+            dateOfBirth: newDOB
+        }
+        setProfile(newProfile)
+    }
 
     return (
         <>
             <div className='row'>
                 <Link to='/tuiter/profile' className='col-1 btn py-3 text-center'>
-                    <i className='fa-solid fa-xmark'/>
+                    <i className="bi bi-x-lg"/>
                 </Link>
                 <span className='col'>
           <h4 className='py-2'>Edit profile</h4>
         </span>
                 <div className='col-4 col-sm-3 col-md-2 py-2'>
-                    <button className='btn btn-light rounded-pill' onClick={saveProfile}>
+                    <button className='btn btn-light rounded-pill'
+                    onClick={(event) => {saveProfile(event); changeRoute()}}>
                         Save
                     </button>
                 </div>
             </div>
-            <div className='col-12 position-relative wd-profile-edit-banner-div'>
+            <div className='col-12 position-relative'>
                 <img
-                    className='my-1 wd-profile-edit-banner'
+                    className='w-100 px-0 mx-0 border-0'
                     src={profile.bannerPicture}
                     alt='bannerPicture'
                 />
-                <i className='btn fa-solid fa-camera wd-profile-edit-banner-update'/>
-                <div className='col-9 wd-profile-circle-icon-div'>
+                <div className='rounded-circle card-img-overlay mx-0 my-5 top-50'>
                     <img
-                        className='wd-profile-edit-circle-icon img-fluid'
+                        width={100}
+                        className='float-begin rounded-circle'
                         src={profile.profilePicture}
                         alt='profilePicture'
                     />
-                    <i className='btn fa-solid fa-camera wd-profile-edit-icon-update'/>
+                    <button className='rounded-circle m-50 border-0 mx-1'>
+                    <i className='btn fa fa-camera'/>
+                    </button>
+                    <button className='rounded-circle m-50 border-0 mx-1 float-end'>
+                        <i className='btn fa fa-camera'/>
+                    </button>
                 </div>
+
             </div>
             <form>
                 <div className='form-group my-2'>
-                    <label htmlFor='username' className='form-label'>
-                        Name
+                    <label htmlFor='user-firstname' className='form-label'>
+                        First Name
                     </label>
                     <input
                         type='text'
                         className='form-control'
-                        id='username'
-                        placeholder='Name'
-                        value={profile.username}
-                        onChange={inputChangeHandler}
+                        id='user firstname'
+                        placeholder='First Name'
+                        value={profile.firstname}
+                        onChange={(event => changeFirstname(event))}
+                    />
+                </div>
+                <div className='form-group my-2'>
+                    <label htmlFor='user-lastname' className='form-label'>
+                        Last Name
+                    </label>
+                    <input
+                        type='text'
+                        className='form-control'
+                        id='user lastname'
+                        placeholder='Last Name'
+                        value={profile.lastname}
+                        onChange={(event => changeLastname(event))}
                     />
                 </div>
                 <div className='form-group my-2'>
@@ -99,7 +169,7 @@ const EditProfileComponent = () => {
                         id='bio'
                         placeholder='Bio'
                         value={profile.bio}
-                        onChange={inputChangeHandler}
+                        onChange={event => changeBio(event)}
                     />
                 </div>
                 <div className='form-group my-2'>
@@ -112,7 +182,7 @@ const EditProfileComponent = () => {
                         id='location'
                         placeholder='Location'
                         value={profile.location}
-                        onChange={inputChangeHandler}
+                        onChange={event => changeLocation(event)}
                     />
                 </div>
                 <div className='form-group my-2'>
@@ -125,7 +195,7 @@ const EditProfileComponent = () => {
                         id='website'
                         placeholder='Website'
                         value={profile.website}
-                        onChange={inputChangeHandler}
+                        onChange={event => changeWebsite(event)}
                     />
                 </div>
                 <div className='form-group my-2'>
@@ -138,7 +208,7 @@ const EditProfileComponent = () => {
                         id='dateOfBirth'
                         placeholder='Date of birth'
                         value={profile.dateOfBirth}
-                        onChange={inputChangeHandler}
+                        onChange={event => changeDOB(event)}
                     />
                 </div>
             </form>

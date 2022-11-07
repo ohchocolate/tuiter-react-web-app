@@ -18,7 +18,7 @@ const ProfileComponent = () => {
                     </p>
                 </span>
             </div>
-            <div className='col-12 position-relative wd-profile-banner-div'>
+            <div className='col-12 position-relative'>
                 <img
                     className='w-100 px-0 mx-0 border-0'
                     src={profile.bannerPicture}
