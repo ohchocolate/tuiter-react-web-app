@@ -10,7 +10,7 @@ const WhoToFollowListItem = (
 ) => {
     return(
         <div>
-        <li key={who.handle} className="list-group-item">
+        <li className="list-group-item">
             <div className="row d-flex justify-content-between">
                 <div className="col-9">
                     <div className="row">

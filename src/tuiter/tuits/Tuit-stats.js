@@ -1,18 +1,9 @@
 import {useDispatch} from 'react-redux';
 import React from 'react';
-import {likeTuit, unlikeTuit} from "../reducers/tuits-reducer";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = ({ tuit }) => {
     const dispatch = useDispatch();
-
-    const likeTuitHandler = (tuit) => {
-        dispatch(likeTuit(tuit));
-    };
-
-    const unlikeTuitHandler = (tuit) => {
-        dispatch(unlikeTuit(tuit))
-    }
-
 
     return (
         <div className='col-12 d-flex pt-2 pe-5 justify-content-between'>
@@ -36,19 +27,53 @@ const TuitStats = ({ tuit }) => {
             </div>
             <div>
                 {
-                    !tuit.liked &&
+                    tuit.liked &&
                     <button
-                        onClick={() => likeTuitHandler(tuit)}
+                        onClick={() => dispatch(updateTuitThunk({
+                            ...tuit,
+                            liked: false,
+                            likes: tuit.likes - 1
+                        }))}
                         className='btn btn-sm'>
                         <i className='fas fa-heart'/> ({tuit.likes})
                     </button>
                 }
                 {
-                    tuit.liked &&
+                    !tuit.liked &&
                     <button
-                        onClick={() => unlikeTuitHandler(tuit)}
+                        onClick={() => dispatch(updateTuitThunk({
+                            ...tuit,
+                            liked: true,
+                            likes: typeof tuit.likes === 'undefined' ? 1: tuit.likes + 1
+                        }))}
                         className='btn btn-sm'>
                         <i className='fas fa-heart' style={{color: 'red'}}/> {tuit.likes}
+                    </button>
+                }
+            </div>
+            <div>
+                {
+                    tuit.disliked &&
+                    <button
+                        onClick={() => dispatch(updateTuitThunk({
+                            ...tuit,
+                            disliked: false,
+                            dislikes: tuit.dislikes - 1
+                        }))}
+                        className='btn btn-sm'>
+                        <i className='bi bi-hand-thumbs-down-fill'/> ({tuit.dislikes})
+                    </button>
+                }
+                {
+                    !tuit.disliked &&
+                    <button
+                        onClick={() => dispatch(updateTuitThunk({
+                            ...tuit,
+                            disliked: true,
+                            dislikes: typeof tuit.likes === 'undefined' ? 1: tuit.dislikes + 1
+                        }))}
+                        className='btn btn-sm'>
+                        <i className='bi bi-hand-thumbs-down'/> {tuit.dislikes}
                     </button>
                 }
             </div>
