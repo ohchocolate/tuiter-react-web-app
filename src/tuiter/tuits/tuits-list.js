@@ -1,8 +1,8 @@
+/* eslint-disable */
 import React, {useEffect} from 'react';
 import TuitItem from './TuitItem.js';
 import {useDispatch, useSelector } from 'react-redux';
 import {findTuitsThunk} from "../../services/tuits-thunks";
-
 
 const TuitList = () => {
     const {tuits, loading} = useSelector(
