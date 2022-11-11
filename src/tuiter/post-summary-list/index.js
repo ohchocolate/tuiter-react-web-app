@@ -1,6 +1,6 @@
 import React from "react";
 import PostSummaryItem
-    from "./post-summary-item";
+    from "./post-summary-item.js";
 import {useSelector} from "react-redux";
 
 const PostSummaryList = () => {
