@@ -10,6 +10,7 @@
     "replies": 123,
     "retuits": 432,
     "likes": 17,
+    "dislikes": 0,
     "handle": "@spacex",
     "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
 
@@ -22,9 +23,11 @@
     "title": "JavaScript is programming language that can run on browsers as well as desktops",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
     "liked": false,
+    "disliked": true,
     "replies": 345,
     "retuits": 225,
     "likes": 115,
+    "dislikes": 1,
     "handle": "@java_script",
     "tuit": "JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries."
   },
@@ -36,9 +39,11 @@
     "title": "",
     "image": "https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png",
     "liked": false,
+    "disliked": false,
     "replies": 100,
     "retuits": 215,
     "likes": 135,
+    "dislikes": 0,
     "handle": "@jquery",
     "tuit": "jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax."
   },
@@ -50,6 +55,7 @@
     "title": "",
     "image": "https://s3.amazonaws.com/clarityfm-production/attachments/32059/default/nodejs-512.png?1573156678",
     "liked": false,
+    "disliked": true,
     "replies": 111,
     "retuits": 222,
     "likes": 3,
