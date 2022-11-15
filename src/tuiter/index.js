@@ -40,6 +40,6 @@ function Tuiter() {
             </div>
         </Provider>
     );
-};
+}
 
 export default Tuiter;

@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import {createTuitThunk, deleteTuitThunk, findTuitsThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 const initialState = {
-    tuits: [],
+    tuits: [],  // initial state has no tuits
     loading: false
 }
 
