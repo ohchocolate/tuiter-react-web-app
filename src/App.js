@@ -6,6 +6,7 @@ import {BrowserRouter} from "react-router-dom";
 import {Routes} from "react-router";
 import {Route} from "react-router";
 
+
 //the entry point of the React.js application
 function App() {
     return (
