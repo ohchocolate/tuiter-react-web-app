@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        rel="stylesheet"/>
+  <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="bg-dark text-white">
+<div class="container m-auto pt-1">
+  <div class="row">
+    <div class="col-2">
+      <div class="list-group">
+        <a class="list-group-item list-group-item-action bg-dark text-white">
+          T
+        </a>
+        <a href="../home.html"
+           class="list-group-item list-group-item-action bg-dark text-white">
+          <i class="fa fa-home"></i>
+          <span class="d-done d-xl-inline d-none d-sm-none">Home</span>
+        </a>
+        <a href="../explore/index.html"
+           class="list-group-item list-group-item-action bg-dark text-white">
+          <i class="fa fa-hashtag fa-bold"></i>
+          <span class="d-done d-xl-inline d-none d-sm-none fw-bold">Explore</span>
+        </a>
+        <a href="../notification.html"
+           class="list-group-item list-group-item-action bg-dark text-white">
+          <i class="fa fa-bell"></i>
+          <span class="d-done d-xl-inline d-none d-sm-none">Notifications</span>
+        </a>
+        <a
+                class="list-group-item list-group-item-action bg-dark text-white">
+          <i class="fa fa-envelope"></i>
+          <span class="d-done d-xl-inline d-none d-sm-none">Messages</span>
+        </a>
+        <a href="public/tuiter/bookmarks/index.html"
+           class="list-group-item list-group-item-action bg-dark text-white">
+          <i class="fa fa-bookmark"></i>
+          <span class="d-done d-xl-inline d-none d-sm-none">Bookmarks</span>
+        </a>
+        <a
+                class="list-group-item list-group-item-action bg-dark text-white">
+          <i class="fa fa-list"></i>
+          <span class="d-done d-xl-inline d-none d-sm-none">List</span>
+        </a>
+        <a href="../profile.html"
+           class="list-group-item list-group-item-action bg-dark text-white">
+          <i class="fa fa-user"></i>
+          <span class="d-done d-xl-inline d-none d-sm-none">Profile</span>
+        </a>
+        <a
+                class="list-group-item list-group-item-action bg-dark text-white">
+          <i class="fa fa-dot-circle"></i>
+          <span class="d-done d-xl-inline d-none d-sm-none">More</span>
+        </a>
+      </div>
+      <button id="tuit-button" class="btn btn-primary w-100 mt-1 rounded-pill">
+        Tuit
+      </button>
+    </div>
+    <div class="col-6 wd-divider">
+      <div class="row m-1">
+        <div class="col-10">
+          <div class="position-relative">
+            <i class="fas fa-search fa-2x position-absolute m-1" style="color:darkgrey"></i>
+            <input class="ps-5 form-control rounded-pill wd-search-tab border-dark" placeholder="Search Tuiter">
+          </div>
+        </div>
+        <div class="col-2">
+          <i class="fas fa-cog fa-2x" style="color:darkgrey"></i>
+        </div>
+      </div>
+      <ul class="nav nav-tabs mt-1 mb-1 border-dark">
+        <li class="nav-item">
+          <!-- for-you.html-->
+          <a class="nav-link wd-nav-tab" href="#">
+            For You
+          </a>
+        </li>
+        <li class="nav-item">
+          <!-- trending.html-->
+          <a class="nav-link wd-nav-tab" href="#">
+            Trending
+          </a>
+        </li>
+        <li class="nav-item">
+          <!-- news.html-->
+          <a class="nav-link wd-nav-tab" href="#">
+            News
+          </a>
+        </li>
+        <li class="nav-item d-none d-sm-none d-md-block d-lg-block">
+          <!-- sports.html-->
+          <a class="nav-link wd-nav-tab" href="#" tabindex="-1">
+            Sports
+          </a>
+        </li>
+        <li class="nav-item d-none d-sm-none d-md-none d-xl-inline-block">
+          <!-- entertainment.html-->
+          <a class="nav-link" href="#" tabindex="-1">
+            <span class="d-none d-sm-none d-md-none d-xl-inline-block fw-bold" style="color: white">Entertainment</span>
+          </a>
+          <hr style="color: rgb(29,161,242)" size="10px">
+        </li>
+      </ul>
+
+      <!--middle content picture-->
+      <div class="position-relative">
+        <img src="https://s.hdnux.com/photos/01/23/33/15/21869409/4/rawImage.jpg" width="100%"/>
+        <h1 class="position-absolute bottom-0 left-0 text-white">SpaceX's Starship</h1>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item bg-dark text-white">
+          <div class="row">
+            <div class="col-8 ">
+              <div class="text-secondary">
+                Web Development
+              </div>
+              <div class="fw-bolder">
+                ReactJS<i class="fas fa-check-circle"></i> - 2h
+              </div>
+              <div class="fw-bolder">
+                React.js is a Single Page Application framework
+              </div>
+            </div>
+            <div class="col-4">
+              <img class="float-end" src="../../../images/react.png" height="100px">
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item bg-dark text-white">
+          <div class="row">
+            <div class="col-8">
+              <div class="fw-bolder">
+                JavaScript<i class="fas fa-check-circle"></i> - 2h
+              </div>
+              <div class="fw-bolder">
+                JavaScript is programming language that can run on browsers as well as desktops
+              </div>
+              <div class="text-secondary">
+                123K Tuits
+              </div>
+            </div>
+            <div class="col-4">
+              <img class="float-end rounded" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAmVBMVEX33x4AAAD/5h/HtRm/rBf/6B/64h7+5R+8qhf/6h/33h7/7SD/6yD64R5LQwnw2R09NwccGQPhyxsXFQNxZg6zohallRSbjBPOuhkQDgKThRLZxBozLgaNgBGKfBEgHAR+cg8qJQVTSwro0hyomBRBOgjeyBsuKQVkWwyAdBB4bA9eVQtnXQweGwT/8iE5MwdPRwklIQQUEQJw/kQsAAAHv0lEQVR4nO2c63qqOhCGAUkCSKSloljUpWJtPdS23v/FbVh1tx4mkCAY9n7m/StN85FkMjMZYhgIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiA3wClnP1DKdffnGk4gqNzfWj4Lwo4TRYPhcLCMnE4YMJ+0SyVPHYi0vJfZ0AXx8+7ldWT+MJo/vE3sgDK5N3QXSMeEcKySv+O+Ya//gH9rjvpR2m2NRoFCu1ghZ+nwAZb3zXwatmUcKykkxuC1SN9fngP3XiIKqaCQ0s5Xqb6Mx4i3YRjVFVIyldGXszHYHaUIUFZIwhdZgab5mpB7ioE7rKjQSgotzCXjuMwoN46iQpI8qQjMiHWPoppCtlIawZzXWPNaVFLIDWWBpvkU6JWopJDO1AWa5jbQ6qiqKHSdKgJNc929u6wTFBRyo5rArDWd81RBIRlWVfigc57KK+ShIJSQYKNxy5BX6FceQtM8hPo8VIUxlHK3QT47Gl1waYUMfjDn9W3odOzo+Q0OqQ4TQ6frJq9QFFGMl0HXtRgjfjdwFte/9xK9caL8LO3BAvvBb9qKMhodzn9+XOqOoGQV8hB2uXcXaTk/Hp/+/KZ5AA15hcQGn+sFlzbESn9X4ziy9Ef5sgrdJfhcdDWbPRL/+2M/1D6AhsIYrsHnoJ3cjb6H125HRlFa4Q56bAv61DR/dhPoDn2PSCsE9gHTnHY9oE0ajl5ivy25/dsUTkCFBovTFiTZjjQxhtkotmUADQWFW+ixndbYVo7bLM2fNmwHJUjvh3CKRnciTQJphXB02G/JllCA9CwVZKEGrV+JsgpZDD5nmp22L0Xp2CIQnRgOaLvXonx8CG4XObtQsrBBD/IxvjgRNZoEbns1SiukooWY8zoJWhAJwsjPUqvw6H48CX3tR4Ug8grdQZHCjH5Ha05NhLxCWp7z3kZWt0U+9zc1n1uMpiFr2eahcvbklSs0zflmRVqlUen8EM5GXbG1aYvcVbUzYDCEgjW2xuioKUylD9i2TlvmqlothhU/yko0t3E7nDnVeppIWqFprlP/vmJAVGuilCQ+Lan+YVSva1ORaPZT7VZVvTbRTeYqGm3dEivUl5IEzJ2KmPh6Z2qVGmEmX2Ga0786gbsrlaqguRWrFLgtPJ0Sq1WyZ2HScAT+IYjWyraKCg1O0o18qelO40FGVYV5vXfyJi1xqs+iVleYawz7so5qpE3iLQozq8pW8On3FWOJ74ya4TaF2Th2vcGnjERtJxy3KsxtTmDLuACJpojxdoV5I+5qPS9T+KZpU6xFYV7vlQ4/ihU+JXok1qQw0+h6kaD07chMcOjfMLUpzH05ahcaHabFnNaoMDc6hlOwQer5QqhWhXl7hjhvPNGSm6pbYebo2KJs1e6/P0u/cVNBaPWhxa9pQKHBEsEoJv8XhUZXkK2KdeyIjSg0PHjX0BJgVFDIyvtpwQb1WUdlirJCRu1lqdW34EP/SYPlRUz09gQV6h2BCO6H/czDLJNIQ7DV5j7TYyyaCRa5CxsFQUUeSSf5ry9l85SmB6jVTVOeqZ/OhKMiqMgD4wDqO8f4YVAikaZgJm7WzBiS4G8RxYMBbkZsAyoMgF6ffqjuFNsMloCtTptQSEl8jGmGYKc8ODy/UphF8rOTmfceFm4nFnweDnfhNtzMMBw5QPaBw+7Hw+V6uXKo58W3JcDvzand9WbGcv7bfs+4XlyCZXjhIzNmXwW3HwUSRcWodUf53I3P+7W+6hOlcFfO4xx/BaV+H4WVpSyFP8b8Cmv1S7kV9C8N2tS9+BfWBFYYnSjkwRp2pEeCLyeFd4MsAPtVHUaWQKXd81m1K+8KStVGJ0uWp+K7TBZO97pKs2uPBY/P6lyGLIazQi8xJ8zwPC8zslYqyld/eCdjTYuy2p9RygjjXm6Z8jaJEYsPM25058/wBLMvG55dFJL9fu+mnanoXZv9032LpgUKM7M7ixK+33e73f0+iIfCSuKMOk9KS4qXRu/Fh39n/o8nmssnHD4+Fz3hCzuy29foswkr66X4uLAIAq9AlXo/Wfclj4RAni/WC4MjBUW2derLF0/5dWNCVpcvm0gWJRZSd9mJWmHPGf1r/9i6ZUp8s609gwF/bCbB19UQ5he3yB9oC1qt/1yGpyVnQSKG0MumQfGpSynLBsIKtqrUlQf4ck4a3GRQa3VnfhAkKIo5iL4oZIHCTXSX9LxmcsFV7nWyhbOJVrsHK2fRWN2XupUHF+GPRKEvWEyvwfvM3I7azUcl9sDvlHlmEGsg8q4PK1GwgU9R2btmqfJMfR82XO5ticOMS3pxeVk2dTtqNnWxarzWm5O4KKL5fddTT2q1MKOkIOGUl+guhd6ERuXVoG8r6UuqXc+W2zg+lne7aJcxZ1dUKjneJCqLhVOympQN5LxvW/csviA0GYrs4CIKLVVzzkgQT8SG9bCNQolDuHrhZJ92pv3e/LcfT+PtZhAb+2qvmrp51mK2fTjLxH31dtMoIRXbvBVKGA3CJLajaBnZnWSVesy65Y54alnMS1dJ7ETLwSBrM07ClLNsRmipfjrCOc1kEYtRzmt5z/y7RffYZh1NIgiCIAiCIAiCIGf8A7oXc5FefbfDAAAAAElFTkSuQmCC" height="100px">
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item bg-dark text-white">
+          <div class="row">
+            <div class="col-8">
+              <div class="text-secondary">
+                Web Development
+              </div>
+              <div class="fw-bolder">
+                JQuery
+              </div>
+              <div class="text-secondary">
+                123K Tuits
+              </div>
+            </div>
+            <div class="col-4">
+              <img class="float-end" src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png" height="100px">
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item bg-dark text-white">
+          <div class="row">
+            <div class="col-8">
+              <div class="text-secondary">
+                Web Development
+              </div>
+              <div class="fw-bolder">
+                NodeJS<i class="fas fa-check-circle"></i> - 2h
+              </div>
+              <div class="text-secondary">
+                123K Tuits
+              </div>
+            </div>
+            <div class="col-4">
+              <img class="float-end" src="https://s3.amazonaws.com/clarityfm-production/attachments/32059/default/nodejs-512.png?1573156678" height="100px">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-4 position-relative">
+      <ul class="list-group d-none d-sm-none d-md-none d-lg-inline-block">
+        <li class="list-group-item bg-dark text-white fw-bolder">Who to follow</li>
+        <li class="list-group-item bg-dark text-white">
+          <div class="row d-flex justify-content-between">
+            <div class="col-9">
+              <div class="row">
+                <img src="https://pbs.twimg.com/profile_images/1410016948977422337/rKU8iR89_400x400.png" class="rounded-circle col-3">
+                <div class="col">
+                  <div class="fw-bolder">
+                    Java <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div >
+                    @Java
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 m-auto">
+              <button class="btn btn-light btn-block rounded-pill mx-auto">
+                Follow
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Relativity Space -->
+        <li class="list-group-item bg-dark text-white">
+          <div class="row d-flex justify-content-between">
+            <div class="col-9">
+              <div class="row d-flex justify-content-start">
+                <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy" class="rounded-circle col-3">
+                <div class="col">
+                  <div class="fw-bolder">
+                    Relativity Space <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    @relativityspace
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 m-auto">
+              <button class="btn btn-light btn-block rounded-pill">
+                Follow
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Virgin Galactic -->
+        <li class="list-group-item bg-dark text-white">
+          <div class="row d-flex justify-content-between">
+            <div class="col-9">
+              <div class="row d-flex justify-content-start">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/virgin-1-logo-svg-vector.svg" class="rounded-circle col-3">
+                <div class="col">
+                  <div class="fw-bolder">
+                    Virgin Galactic <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    @virgingalactic
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 m-auto">
+              <button class="btn btn-light btn-block rounded-pill">
+                Follow
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <!-- NASA -->
+        <li class="list-group-item bg-dark text-white">
+          <div class="row  d-flex justify-content-between">
+            <div class="col-9">
+              <div class="row d-flex justify-content-start">
+                <img src="https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB_400x400.jpg" class="rounded-circle col-3">
+                <div class="col">
+                  <div class="fw-bolder">
+                    NASA <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    @NASA
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 m-auto">
+              <button class="btn btn-light btn-block rounded-pill">
+                Follow
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Tesla -->
+        <li class="list-group-item bg-dark text-white">
+          <div class="row  d-flex justify-content-between">
+            <div class="col-9">
+              <div class="row d-flex justify-content-start">
+                <img src="https://pbs.twimg.com/profile_images/1337607516008501250/6Ggc4S5n_400x400.png" class="rounded-circle col-3" >
+                <div class="col">
+                  <div class="fw-bolder">
+                    Tesla <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    @Tesla
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 m-auto">
+              <button class="btn btn-light btn-block rounded-pill">
+                Follow
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

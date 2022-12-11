@@ -1,0 +1,58 @@
+/*Search tuiter tab*/
+.wd-search-tab {
+    background-color:grey;
+    color: white;
+}
+
+.wd-nav-tab {
+    color: darkgray;
+}
+
+.wd-divider {
+    border: 1px solid grey;
+}
+
+/*.wd-topic {*/
+/*    padding: 5px;*/
+/*    font-size: 13px;*/
+/*    color: rgb(110,118,125);*/
+/*}*/
+
+/*.wd-number-of-t {*/
+/*    padding: 5px;*/
+/*    font-size: 13px;*/
+/*    color: rgb(110,118,125);*/
+/*}*/
+
+/*.wd-title {*/
+/*    padding: 5px;*/
+/*    color: white;*/
+/*}*/
+
+/*.wd-author {*/
+/*    padding: 5px;*/
+/*    color: white;*/
+/*    font-size: 12px;*/
+/*    font-weight:bold;*/
+/*}*/
+
+/*.wd-time{*/
+/*    padding: 5px;*/
+/*    color: rgb(110,118,125);*/
+/*    font-size: 12px;*/
+/*}*/
+
+/*.wd-content {*/
+/*    padding: 5px;*/
+/*    color: white;*/
+/*    margin-bottom: 30px;*/
+/*}*/
+
+/*.wd-picture {*/
+/*    position: absolute;*/
+/*    right:0px;*/
+/*    margin-right: 16px;*/
+/*    border-radius: 10px;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/
